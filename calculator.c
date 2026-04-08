@@ -53,7 +53,7 @@ int main() {
     char symbol = '#';
     for (int i = 0; i < 10; i++) {
         Sleep(550);
-        printf(".%c",symbol);
+        printf("%c-",symbol);
         fflush(stdout);
     }
 
