@@ -5,9 +5,9 @@
 float num1 = 0;
 float num2 = 0;
 
-float add(float num1, float num2);
-float sub(float num1,float num2);
-float mul(float num1,float num2);
+int add(int num1, int num2);
+int sub(int num1,int num2);
+int mul(int num1,int num2);
 float divi(float num1,float num2);
 
 int main() {
@@ -52,7 +52,7 @@ int main() {
     printf("Loading: ");
     char symbol = '#';
     for (int i = 0; i < 10; i++) {
-        Sleep(700);
+        Sleep(550);
         printf("%c",symbol);
         fflush(stdout);
     }
@@ -60,17 +60,16 @@ int main() {
     printf("\n");
     printf("%.2f %c %.2f\n", num1, operator, num2);
     printf("Answer: %.2f\n",ans);
-
     return 0;
 }
 
-float add(float num1,float num2) {
+int add(int num1,int num2) {
     return num1 + num2;
 }
-float sub(float num1,float num2) {
+int sub(int num1,int num2) {
     return num1 - num2;
 }
-float mul(float num1, float num2) {
+int mul(int num1, int num2) {
     return num1 * num2;
 }
 float divi(float num1,float num2) {
